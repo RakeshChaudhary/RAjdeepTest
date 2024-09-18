@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company HR Portal</title>
+    <link rel="icon" href="./images/icon1.png">
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(157, 157, 108);
+
+        }
+        header,footer{
+            background-color: rgb(148, 89, 41);
+            color: aliceblue;
+            text-align: center;
+            padding: 2px;
+        }
+        .navitem{
+            display: inline;
+            padding: 14px;
+        }
+        .navitem a{
+            text-decoration: none;
+            color: aliceblue;
+        }
+        .registerform{
+            width: max-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .emplyeetable{
+            text-align: center;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            border-collapse: collapse;
+            color: rgb(16, 9, 41);
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 8px;
+            border-color: rgb(66, 23, 107);
+        }  
+        .contactus{
+            text-align: center;  
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Lucknow Family Portal</h1>
+        <nav>
+        <ul>
+            <li class="navitem"><a href="#FamilyRegistration">Family Registration</a></li>
+            <li class="navitem"><a href="#FamilyDirecyory">Family Direcyory</a></li>
+            <li class="navitem"><a href="#ContactUs">Contact Us</a></li>
+        </ul>
+    </nav>
+    </header>
+<image src="./images/img2.jpg" style="width: 100%;"></image>
+
+    <section id="FamilyRegistration" class="registerform">
+    <h2>Family Registration</h2>
+    <p>Fill the below form to register as <em>family member.</em></p>
+    <form action="">
+        <label for="">Name:</label>
+        <input type="text" id="name"><br><br>
+        <label for="">Email:</label>
+        <input type="email" id="Email"><br><br>
+        <label for="">Password:</label>
+        <input type="password" id="password"><br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age"><br><br>
+        <label for="role">Service Post:</label>
+        <select name="" id=""><br>
+<option value="Engineer">Engineer</option>
+<option value="Manager">Manager</option>
+<option value="Inspector">Inspector</option>
+<option value="Doctor">Doctor</option>
+<option value="Officer">Gazetted Officer</option>
+        </select><br><br>
+        <label for="DOB">Date of Brith:</label>
+        <input type="date" id="DOB"><br><br>
+        <label for="file">Please Upload file for these deatils</label>
+        <input type="file" id="file"><br><br>
+<input type="submit" title="Submit Now"><br>
+    </form>
+</section>
+<section id="FamilyDirecyory" class="emplyeetable">
+<h2>Family Directory</h2>
+<p>List of all register family members</p>
+<table>
+    <tr>
+        <th>Family id</th>
+        <th>Family Name</th>
+        <th>Family Role</th>
+    </tr>
+    <tr>
+        <th>111</th>
+        <th>Rakesh</th>
+        <th>Engineer</th>
+    </tr>
+    <tr>
+        <th>222</th>
+        <th>Praveen </th>
+        <th>Gazetted Officer</th>
+    </tr>
+    <tr>
+        <th>333</th>
+        <th>Vineet Kumar</th>
+        <th>Manager</th>
+    </tr>
+    <tr>
+        <th>444</th>
+        <th>Komal Dayal</th>
+        <th>Inspector</th>
+    </tr>
+</table>
+</section>
+<section id="ContactUs" class="contactus">
+<h2>Contact US</h2>
+<p>you can contact us at rinnkuj@gmail.com or visit us between 9:00-5:00 PM at Home Adress</p>
+<p>F-Block,House no-5200/2 Rajaji Puram Awas Vikash colony,Kucknow </p>
+<p>Home Avilabilty Timing:9:00-5:00 PM</p>
+<iframe src="https://www.google.com/maps/embed?pb=!4v1705218873523!6m8!1m7!1sC1YcP2iqrFCxCofzUBTzyw!2m2!1d26.84338525431582!2d80.87483036479834!3f181.78749!4f0!5f0.7820865974627469" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+<Footer>
+    <p>&copy; 2023 company name</p>
+</Footer>
+</body>
+
+</html>

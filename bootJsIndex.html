@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Rajdeep Login Portal</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./bootform.js"></script>
+    <link rel="icon" href="images/imagesIcon.png">
+    <script>
+     
+
+    </script>
+  </head>
+  <body>
+    <script src="./jquery.min.js"></script>
+    <h1 class="text-center p-3">Form Validation Rajdeep Protal</h1>
+    <!--Jquery concept start-->
+    
+<!--Jquery concept Complete-->
+
+
+
+    <div  class="container">
+      <div class="row">
+          <div class="col-md-6 offset-md-3">
+              <div  class="card">
+                  <div class="card-body">
+  
+                      <form onsubmit="return validate()" novalidate action="register.jsp" method="post">
+                      <h3>Register Here !!</h3>
+                      <div class="form-group mt-3">
+                          <!--Enter User name -->  
+                          <input type="text" 
+                          class="form-control name-feild"
+                           placeholder="Enter your name"/>
+                           <br>
+  <small class="name-feild-msg form-text text-danger ml-2"></small>
+  </div>
+  <div class="form-group"> 
+     <!--Enter Email name --> 
+     <input type="text" class="form-control email-feild" placeholder="Enter your Email Address">
+     <br>
+     <small class="email-feild-msg text-danger"></small>
+  </div>   
+     <!--Enter Password -->  
+  <div class="form-group">
+     <input type="password" class="form-control password-feild" placeholder="Enter your password">
+     <br>
+     <small class="pasword-feild-msg form-text text-danger"></small>
+  </div>         
+    <!--Enter Phone Number -->  
+    <div class="form-group">
+      <input type="number" class="form-control phone-feild" placeholder="Enter your phone number">
+      <br>
+      <small class="phone-feild-msg form-text text-danger"></small>
+   </div> 
+  <div class="container text-center">
+      <button class="btn btn-outline-primary">Submit Here</button>
+  </div>
+  </form>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+     <!-- <img id="imgpage" src="./images/MyFamily.jpg" alt="">-->
+    <div class="rectangle1">
+        <p class="rec1">
+          <img class="pic1" src="./images/MyFamily.jpg" />
+          This is Rajdeep portal you can get help as you like!! <br>
+          <b>Rajdeep family to make here for friendly!!</b><br><a href="test.html">Rajdeep Guest Portal</a>
+          
+        </p>
+    </div> 
+    <button onclick="loadAboutInformation()">Load guestPortal</button>
+    <div id="container1"></div>
+    <button id="JQBTN">JQuery Button</button>
+   <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
+    </script>-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+     $(document).ready(function(){
+    //documents is reday
+    $('#JQBTN').click(function(){
+     // $.get("data.json",function(data){
+        $.get("JQindex.html",function(data){
+        console.log("JQuery:")  
+    console.log(data);
+    $('#JQBTN').html(data.document);
+      });
+    });
+    
+      });
+  </script>
+  
+  </body>
+</html>

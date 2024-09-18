@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <Script>
+fetch('https://api.crossref.org/journals?query=pharmacy+health').then((apidata)=>{
+//console.log(apidata);
+return apidata.json();
+}).then((actualdata)=>{
+    console.log(actualdata);
+    console.log(actualdata.message.items[0].ISSN[0]);
+let data= actualdata.message.items[0].ISSN[0];
+document.getElementById("api").innerHTML = data;
+}).catch((error)=>{
+console.log(`error ${error}`);
+});
+
+    </Script>
+
+</body>
+</html>
